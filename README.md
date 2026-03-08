@@ -1,5 +1,17 @@
+# Note by 3wooden
 
-For XIAO ESP32 C6 #define TFT_SDA_READ in User_Setup.h needed (https://github.com/Bodmer/TFT_eSPI/pull/3399#issuecomment-2402937378)
+This is the forked TFT_eSPI repository based on version 2.5.43 with modification - implementing ESP32 C6 support (like done in [AndroidCrypto-Fork](https://github.com/AndroidCrypto/TFT_eSPI?tab=readme-ov-file)) and adding the GC9D01 Display driver for the [0.71inch LCD Module](https://www.waveshare.com/wiki/0.71inch_LCD_Module) The version of the display I got was diffrent from the pictures I saw - mine seemed to include some sort of [TXB0108](https://www.ti.com/lit/ds/symlink/txb0108.pdf) and was not able to be powered by 5V, like the waveshare wiki suggested - only 3.3V seemed to work.
+
+[NEED TO INSERT PICTURE OF BOARD]
+
+
+For XIAO ESP32 C6 uncommenting
+```
+#define TFT_SDA_READ 
+```
+in User_Setup.h was needed (https://github.com/Bodmer/TFT_eSPI/pull/3399#issuecomment-2402937378)
+
+# Original Description
 
 A ["Discussions"](https://github.com/Bodmer/TFT_eSPI/discussions) facility has been added for Q&A etc. Use the ["Issues"](https://github.com/Bodmer/TFT_eSPI/issues) tab only for problems with the library. Thanks!
 
