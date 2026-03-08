@@ -6,7 +6,7 @@
   hardware driver, the graphics functions and the
   proportional fonts.
 
-  The larger fonts are Run Length Encoded to reduce their
+  The larger fonts are Run Length Encoded to reduce their 
   size.
 
   Created by Bodmer 2/12/16
@@ -18,7 +18,7 @@
 #if defined (ESP32)
   #if defined(CONFIG_IDF_TARGET_ESP32S3)
     #include "Processors/TFT_eSPI_ESP32_S3.c" // Tested with SPI and 8-bit parallel
-  #elif defined(CONFIG_IDF_TARGET_ESP32C3) || defined(CONFIG_IDF_TARGET_ESP32C6)
+  #elif defined(CONFIG_IDF_TARGET_ESP32C3) || defined(CONFIG_IDF_TARGET_ESP32C6) || defined(CONFIG_IDF_TARGET_ESP32H2)	// ESP32-C6 + ESP32-H2
     #include "Processors/TFT_eSPI_ESP32_C3.c" // Tested with SPI (8-bit parallel will probably work too!)
   #else
     #include "Processors/TFT_eSPI_ESP32.c"
@@ -757,6 +757,9 @@ void TFT_eSPI::init(uint8_t tc)
 #elif defined (GC9A01_DRIVER)
      #include "TFT_Drivers/GC9A01_Init.h"
 
+#elif defined (GC9D01_DRIVER)
+     #include "TFT_Drivers/GC9D01_Init.h"
+
 #elif defined (ILI9225_DRIVER)
      #include "TFT_Drivers/ILI9225_Init.h"
 
@@ -857,6 +860,9 @@ void TFT_eSPI::setRotation(uint8_t m)
 
 #elif defined (GC9A01_DRIVER)
      #include "TFT_Drivers/GC9A01_Rotation.h"
+
+#elif defined (GC9D01_DRIVER)
+     #include "TFT_Drivers/GC9D01_Rotation.h"
 
 #elif defined (ILI9225_DRIVER)
      #include "TFT_Drivers/ILI9225_Rotation.h"
@@ -3004,8 +3010,8 @@ void TFT_eSPI::setTextPadding(uint16_t x_width)
 }
 
 /***************************************************************************************
-** Function name:           getTextPadding
-** Description:             Return the padding width (as used by setTextPadding)
+** Function name:           setTextPadding
+** Description:             Define padding width (aids erasing old text and numbers)
 ***************************************************************************************/
 uint16_t TFT_eSPI::getTextPadding(void)
 {
