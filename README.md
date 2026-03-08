@@ -1,3 +1,6 @@
+
+For XIAO ESP32 C6 #define TFT_SDA_READ in User_Setup.h needed (https://github.com/Bodmer/TFT_eSPI/pull/3399#issuecomment-2402937378)
+
 A ["Discussions"](https://github.com/Bodmer/TFT_eSPI/discussions) facility has been added for Q&A etc. Use the ["Issues"](https://github.com/Bodmer/TFT_eSPI/issues) tab only for problems with the library. Thanks!
 
 I have setup a Ko-fi account so you can ["buy me a coffee!"](https://github.com/Bodmer/TFT_eSPI/discussions) This encourages me to add new features and capabiities to TFT_eSPI.
