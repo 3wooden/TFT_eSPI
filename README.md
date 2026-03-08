@@ -11,6 +11,10 @@ For XIAO ESP32 C6 uncommenting
 ```
 in User_Setup.h was needed (https://github.com/Bodmer/TFT_eSPI/pull/3399#issuecomment-2402937378)
 
+I was able to compile and see the example code from the waveshare wiki with an XIAO ESP32 C6.
+
+[NEED TO INSERT PROOF PICTURE]
+
 # Original Description
 
 A ["Discussions"](https://github.com/Bodmer/TFT_eSPI/discussions) facility has been added for Q&A etc. Use the ["Issues"](https://github.com/Bodmer/TFT_eSPI/issues) tab only for problems with the library. Thanks!
