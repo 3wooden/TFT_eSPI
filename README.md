@@ -2,7 +2,7 @@
 
 This is the forked TFT_eSPI repository based on version 2.5.43 with modification - implementing ESP32 C6 support (like done in [AndroidCrypto-Fork](https://github.com/AndroidCrypto/TFT_eSPI?tab=readme-ov-file) and [PR#3399 ](https://github.com/Bodmer/TFT_eSPI/pull/3399)) and adding the GC9D01 (Same as GC9D01N) Display driver for the [0.71inch LCD Module](https://www.waveshare.com/wiki/0.71inch_LCD_Module) The version of the display I got was diffrent from the pictures I saw - mine seemed to include some sort of [TXB0108](https://www.ti.com/lit/ds/symlink/txb0108.pdf) and was not able to be powered by 5V, like the waveshare wiki suggested - only 3.3V seemed to work.
 
-[NEED TO INSERT PICTURE OF BOARD]
+<img width="962" height="1075" alt="Screenshot 2026-03-09 024604" src="https://github.com/user-attachments/assets/60782b1c-58fd-4b62-97c4-c9e0ac5eaaf8" />
 
 
 For XIAO ESP32 C6 uncommenting
@@ -13,7 +13,7 @@ in User_Setup.h was needed (https://github.com/Bodmer/TFT_eSPI/pull/3399#issueco
 
 I was able to compile and see the example code from the waveshare wiki with an XIAO ESP32 C6.
 
-[NEED TO INSERT PROOF PICTURE]
+<img width="898" height="641" alt="Screenshot 2026-03-09 024634" src="https://github.com/user-attachments/assets/d162c108-db1f-48ad-9c9f-260cf691979a" />
 
 # Original Description
 
